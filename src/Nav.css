@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navContainer {
+    height: 8vh;
+    font-size: 3vh;
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+}
+.nav-link {
+    color: white;
+    opacity: 60%;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2vh;
+    text-decoration: none;
+    height: 4vh;
+    border-radius: 15%;
+    animation: slides 0.5s linear 0s 1 normal;
+    /* background-color: #2E4053; */
+}
+.nav-link:hover {
+    color: white;
+    opacity: 100%;
+    /* box-shadow: 1px 1px 3px grey; */
+    text-decoration:underline;
+    font-size: 3.5vh;
+}
+.nav-link.active {
+    color: white;
+    opacity: 100%;
+    text-decoration: underline;
+}
+
+@keyframes slides{
+  from{
+    opacity: 0;
+    padding-top:0vh;
+  }
+  to{
+    opacity: 1;
+    padding-top:2vh;
+  }
+}
+
+#port{
+    margin-left: 5vh;
+    opacity: 100%;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vh;
+    background: blue;
+    background: linear-gradient(to right,white 50%,blue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Home{
+    margin-left: 110vh;
+}
+
+#about{
+    margin-left: 5vh;
+}
+
+#myProject{
+    margin-left: 5vh;
+}
+
+#Skills{
+    margin-right: 5vh;
+    margin-left: 5vh;
+}
+
+@media screen and (max-width:400px) {
+  #port{
+    margin-left: 1vh;
+    font-size: 17px;
+  }
+  .navContainer{
+    font-size: 2vh;
+    border: 1px solid black;
+  }
+
+  .nav-link:hover{
+    font-size: 2.5vh;
+  }
+  #Home{
+    margin-left: 1vh;
+  }
+
+  #about{
+    margin-left: 1vh;
+  }
+
+  #myProject{
+    margin-left: 1vh;
+  }
+
+  #Skills{
+    margin-right: 2vh;
+    margin-left: 1vh;
+  }
+}

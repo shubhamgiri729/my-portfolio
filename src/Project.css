@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.project{
+    font-size: 3.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vh;
+    color: white;
+    padding-left: 20vh;
+    padding-top: 60vh;
+}
+
+.project-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 38vh;
+    width: 50vh;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px white;
+    text-align: center;
+    animation: op 1s linear 0s 1 normal;
+}
+
+.project-name:hover{
+    box-shadow: 0 0 15px white;
+    height: 40vh;
+}
+
+#project-5{
+    height: 43vh;
+    width: 62vh;
+}
+
+#project-5:hover{
+    height: 45vh;
+}
+.project-name h1{
+    color: yellow;
+    padding-left: 2vh;
+    overflow: hidden;
+}
+
+.project-name h1:hover{
+    text-decoration: underline;
+}
+
+
+
+@keyframes op {
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .project{
+        font-size: 2vh;
+        padding-left: 10vh;
+        margin-top: 2vh;
+    }
+    .project-name{
+        padding-top: 2vh;
+        text-align: left;
+        height: 25vh;
+        width: 30vh;
+    } 
+
+    #project-5{
+        height: 35vh;
+        width: 30vh;
+    }
+}

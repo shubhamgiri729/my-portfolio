@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.Skills{
+    font-size: 4vh;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40vh;
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vh;
+    padding: 2vh;
+    margin-left: 20vh;
+}
+
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 2vh;
+    animation: drop 0.5s linear 0s 1 normal;
+    width: 30vh;
+    height: 25vh;
+    margin-top: 2vh;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(5px);
+    transition: width 0.1s linear;
+}
+
+
+.skill:hover{
+    text-decoration: underline;
+    width: 31vh;
+    background-color: #ffc40c;
+}
+
+@keyframes drop {
+    from{
+        padding-top: 0vh;
+        opacity: 0;
+    }
+    to{
+        padding-top: 2vh;
+        opacity: 1;
+    }
+}
+
+.html{
+    padding-left: 3vh;
+}
+
+.css{
+    padding-left: 6vh;
+    padding-right: 3vh;
+}
+
+.python{
+    padding-left: 5vh;
+}
+
+.sql{
+    padding-left: 7vh;
+}
+
+@media screen and (max-width: 400px) {
+    .Skills{
+        font-size: 3vh;
+    }
+    .skill{
+        width: 20vh;
+        height: 20vh;
+    }
+    .skill-list{
+        margin-left: 1vh;
+        gap: 2vh;
+    }
+    .web{
+        width: 10vh;
+        height: 10vh;
+    }
+    .html{
+        padding-left: 2vh;
+    }
+    .css{
+        padding-left: 2vh;
+    }
+}

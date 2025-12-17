@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutMe {
+    font-size: 4vh;
+    color: white;
+    animation: opac 0.5s linear 0s 1 normal;
+    padding-top: 30vh;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#intro {
+    padding-top: 0vh;
+}
+
+.section {
+    padding-top: 10vh;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5vh;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15vh;
+    top: 110vh;
+    background: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px white;
+    height: 60vh;
+    width: 50vh;
+}
+
+.contact-me:hover{
+    box-shadow: 0 0 50px white;
+}
+
+.contact-me h1 {
+    margin-left: 14vh;
+    color: white;
+}
+
+.message {
+    margin-top: 6vh;
+    width: 40vh;
+    margin-left: 5vh;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 5px white;
+    color: white;
+    padding-left: 2vh;
+    font-size: 2vh;
+}
+.message:hover{
+    box-shadow: 0 0 70px white;
+}
+#btn {
+    background-color: white;
+    width: 25vh;
+    height: 20vh;
+    border-radius: 25px;
+    margin-bottom: 3vh;
+    margin-left: 12vh;
+    color: black;
+    font-weight: bolder;
+    font-size: 2.5vh;
+}
+
+#name {
+    height: 30vh;
+    border-radius: 25px;
+}
+
+#mail {
+    height: 30vh;
+    border-radius: 25px;
+}
+
+#message-area {
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    .aboutMe {
+        font-size: 2vh;
+    }
+
+    .contact-me {
+        display: flex;
+        position: relative;
+        height: 60vh;
+        width: 40vh;
+        margin-left: 20vh;
+        margin-bottom: 10vh;
+        overflow: hidden;
+    }
+
+    .message {
+        margin-top: 6vh;
+        width: 30vh;
+        margin-left: 3vh;
+        background: transparent;
+        border: 2px solid white;
+        box-shadow: 0 0 5px white;
+        color: white;
+        padding-left: 2vh;
+    }
+
+    #btn {
+        background-color: white;
+        width: 25vh;
+        height: 20vh;
+        border-radius: 25px;
+        margin-bottom: 3vh;
+        margin-left: 7vh;
+        color: black;
+        font-weight: bolder;
+        font-size: 2.5vh;
+    }
+}
