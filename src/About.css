@@ -45,8 +45,21 @@
     border: 2px solid white;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 10px white;
-    height: 60vh;
+    height: 65vh;
     width: 50vh;
+}
+
+.success-msg {
+  height: 4vh;           
+  text-align: center;
+  font-size: 3vh;
+  color: lightgreen;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.success-msg.show {
+  opacity: 1;
 }
 
 .contact-me:hover{
@@ -75,26 +88,28 @@
 #btn {
     background-color: white;
     width: 25vh;
-    height: 20vh;
+    height: 6vh;
     border-radius: 25px;
     margin-bottom: 3vh;
     margin-left: 12vh;
+    padding-right: 2vh;
     color: black;
     font-weight: bolder;
     font-size: 2.5vh;
 }
 
 #name {
-    height: 30vh;
+    height: 5vh;
     border-radius: 25px;
 }
 
 #mail {
-    height: 30vh;
+    height: 5vh;
     border-radius: 25px;
 }
 
 #message-area {
+    height: 12vh;
     border-radius: 25px;
 }
 
