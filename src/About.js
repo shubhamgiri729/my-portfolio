@@ -1,91 +1,135 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './About.css';
 import emailjs from '@emailjs/browser';
 
 export default function About() {
-  const [openSection, setOpenSection] = useState(null);
-  const [sent, setSent] = useState(false);
-
-  const handleToggle = (section) => {
-    setOpenSection((prev) => (prev === section ? null : section));
-  };
 
   const form = useRef();
 
+  const [sent, setSent] = useState(false);
+
   const sendEmail = (e) => {
+
     e.preventDefault();
 
     emailjs
-      .sendForm('service_j1m8xbr', 'template_qh3e341', form.current, {
-        publicKey: 'WcsW676Cz9gXFL5S1',
+      .sendForm(
+        'service_j1m8xbr',
+        'template_qh3e341',
+        form.current,
+        {
+          publicKey: 'WcsW676Cz9gXFL5S1',
+        }
+      )
+      .then(() => {
+
+        setSent(true);
+
+        form.current.reset();
+
+        setTimeout(() => setSent(false), 3000);
+
       })
-      .then(
-        () => {
-          setSent(true);
-          form.current.reset();
-          setTimeout(() => setSent(false), 3000);
-        },
-        (error) => {
-          console.error(error);
-          alert('Failed to send message');
-        },
-      );
+      .catch((error) => {
+        console.error(error);
+      });
   };
+
   return (
-    <>
-      <section id='About'>
-        <div className="aboutMe">
-          <details className="section" id='intro' open={openSection === 'intro'}>
-            <summary onClick={(e) => { e.preventDefault(); handleToggle('intro'); }}>👤 Introduction </summary>
-            <div className="section-content">
-              <p><strong>Full Name:</strong> Shubham Rajkumar Giri</p>
-              <p><strong>Age:</strong> 20</p>
-              <p><strong>Gender:</strong> Male</p>
-              <p><strong>Role:</strong> Software Developer</p>
-              <p><strong>Phone:</strong> +91 81046 25140</p>
-              <p><strong>Email:</strong> <a href="mailto:shubhamgiri729@gmail.com">shubhamgiri729@gmail.com</a></p>
-              <p><strong>Location:</strong> Mumbai, India</p>
-            </div>
-          </details>
 
-          <details className="section" open={openSection === 'qualification'}>
-            <summary onClick={(e) => { e.preventDefault(); handleToggle('qualification'); }}>🎓 Qualification </summary>
-            <div className="section-content">
-              <p><strong>Degree:</strong> B.E. in Computer Engineering</p>
-              <p><strong>University:</strong> Mumbai University</p>
-              <p><strong>College:</strong> Terna College of Engineering, Nerul</p>
-              <p><strong>Current Semester:</strong> 6th</p>
-              <p><strong>SGPA (Sem I to V):</strong> 6.78, 8.10, 8.30, 8.00, 8.01 <br /> <strong>CGPA:</strong> 7.84</p>
-              <p><strong>SSC:</strong> 89.60% (2020)</p>
-              <p><strong>HSC:</strong> 65.59% (2023)</p>
-            </div>
-          </details>
+    <section id="About">
 
-          <details className="section" open={openSection === 'hobby'}>
-            <summary onClick={(e) => { e.preventDefault(); handleToggle('hobby'); }}>🎯 Hobbies </summary>
-            <div className="section-content">
-              <p>Creating educational content on YouTube</p>
-              <p>Creating AI-generated visual content for stock platforms</p>
-              <p>Learning new Languages</p>
-              <p>Exploring cricket related contents</p>
-            </div>
-          </details>
+      <h1 className="about-heading">
+        About Me
+      </h1>
+
+      <div className="about-cards">
+
+        <div className="about-card intro-card">
+
+          <h2>👤 Introduction</h2>
+
+          <p><strong>Full Name:</strong> Shubham Rajkumar Giri</p>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Phone:</strong> +91 81046 25140</p>
+          <p><strong>Email:</strong> shubhamgiri729@gmail.com</p>
+          <p><strong>Location:</strong> Mumbai, India</p>
+
+        </div>
+        
+        <div className="about-card qualification-card">
+
+          <h2>🎓 Education</h2>
+
+          <p><strong>Degree:</strong> B.E. Computer Engineering</p>
+          <p><strong>University:</strong> Mumbai University</p>
+          <p><strong>College:</strong> Terna Engineering College</p>
+          <p><strong>Semester:</strong> 7th</p>
+          <p><strong>CGPA:</strong> 7.84</p>
+          <p><strong>SSC:</strong> 89.60%</p>
+          <p><strong>HSC:</strong> 65.59%</p>
+
         </div>
 
-        <div className="contact-me">
-          <h1>contact me</h1>
-          <div className={`success-msg ${sent ? "show" : ""}`}>
-            ✅ Message sent successfully!
-          </div>
+        <div className="about-card hobby-card">
 
-          <form ref={form} onSubmit={sendEmail}>
-            <input type='text' className='message' id='name' name='from_name' placeholder='Enter Name' required />
-            <input type='email' className='message' id='mail' name='from_email' placeholder='Your Email' required />
-            <textarea className='message' id='message-area' name='message' placeholder='your message' rows={20} required></textarea>
-            <input type='submit' className='message' id='btn' value="send" />
-          </form>
+          <h2>🎯 Hobbies</h2>
+
+          <p>Creating educational content on YouTube</p>
+          <p>Creating AI-generated visual content</p>
+          <p>Learning new languages</p>
+          <p>Exploring cricket content</p>
+
         </div>
-      </section>
-    </>
+
+      </div>
+
+      <div className="contact-me">
+
+        <h1>Contact Me</h1>
+
+        <div className={`success-msg ${sent ? "show" : ""}`}>
+          ✅ Message sent successfully!
+        </div>
+
+        <form ref={form} onSubmit={sendEmail}>
+
+          <input
+            type='text'
+            className='message'
+            name='from_name'
+            placeholder='Enter Name'
+            required
+          />
+
+          <input
+            type='email'
+            className='message'
+            name='from_email'
+            placeholder='Your Email'
+            required
+          />
+
+          <textarea
+            className='message'
+            name='message'
+            placeholder='Your Message'
+            rows={6}
+            required
+          />
+
+          <input
+            type='submit'
+            className='message'
+            id='btn'
+            value='Send'
+          />
+
+        </form>
+
+      </div>
+
+    </section>
   );
 }
