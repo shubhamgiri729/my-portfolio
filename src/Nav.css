@@ -4,13 +4,19 @@
 }
 
 .navContainer {
-    height: 8vh;
+    height: 10vh;
+    width: 100%;
     font-size: 3vh;
     padding-top: 3px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: static;
+    z-index: 1000;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    
 }
 .nav-link {
     color: white;
@@ -22,13 +28,10 @@
     height: 4vh;
     border-radius: 15%;
     animation: slides 0.5s linear 0s 1 normal;
-    /* background-color: #2E4053; */
 }
 .nav-link:hover {
     color: white;
     opacity: 100%;
-    /* box-shadow: 1px 1px 3px grey; */
-    text-decoration:underline;
     font-size: 3.5vh;
 }
 .nav-link.active {
@@ -50,19 +53,13 @@
 
 #port{
     margin-left: 5vh;
-    opacity: 100%;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
     font-size: 4vh;
-    background: blue;
-    background: linear-gradient(to right,white 50%,blue 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #Home{
-    margin-left: 110vh;
+    margin-left: auto;
 }
 
 #about{

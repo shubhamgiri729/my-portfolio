@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './Nav';
 import Project from './Project';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BGvideo from './backgroundvideo.mp4'
+import BGvideo from './portfolio-background.mp4'
 import Skills from './Skills';
 import About from './About';
 import Home from './Home';
