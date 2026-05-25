@@ -6,6 +6,9 @@ import BGvideo from './portfolio-background.mp4'
 import Skills from './Skills';
 import About from './About';
 import Home from './Home';
+import Certificate from './certificate';
+import ContactMe from './contactMe';
+import Footer from './footer';
 import './App.css';
 function App() {
   return (
@@ -15,21 +18,30 @@ function App() {
           <source src={BGvideo} type="video/mp4" />
         </video>
         <Nav />
-          <section id="home">
-        <Home name="Shubham Giri" role="Web Developer" />
-      </section>
+        <section id="home">
+          <Home name="Shubham Giri" role="Web Developer" />
+        </section>
 
-      <section id="about">
-        <About />
-      </section>
+        <section id="about">
+          <About />
+        </section>
 
-      <section id="myProject">
-        <Project />
-      </section>
+        <section id="myProject">
+          <Project />
+        </section>
 
-      <section id="skills">
-        <Skills />
-      </section>
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="certificate">
+          <Certificate />
+        </section>
+
+        <section id="contactMe">
+          <ContactMe />
+        </section>
+        <Footer />
 
       </div>
     </>

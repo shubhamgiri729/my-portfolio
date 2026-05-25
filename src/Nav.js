@@ -9,6 +9,8 @@ export default function Navbar() {
       <a href='#About' id='about' className='nav-link'>About</a>
       <a href='#Project' id='myProject' className='nav-link'>Projects</a>
       <a href='#skills' id='Skills' className='nav-link'>Skills</a>
+      <a href="#certificate" id='Certificate' className='nav-link'>Certificates</a>
+      <a href="#contactMe" id="ContactMe" className='nav-link'>Contact Me</a>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: white;
+}
+
+#certificate-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
