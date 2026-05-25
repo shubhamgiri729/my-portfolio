@@ -5,6 +5,7 @@ import insta from '../src/icons/instagram.png';
 import github from '../src/icons/github.png';
 import linkedin from '../src/icons/linkedin.png';
 import youtube from '../src/icons/youtube.png';
+import resume from '../src/icons/Shubham_Giri_Resume.pdf';
 
 
 export default function Myport(props) {
@@ -28,7 +29,8 @@ export default function Myport(props) {
           <div className="info">
             <p className='name'>Hello, I’m {props.name}</p>
             <h1>{props.role}</h1>
-            <p className='intro'>I’m a web developer focused on building responsive frontends and scalable backends. With practical experience in HTML, CSS, JavaScript, and React on the frontend, and Python, SQL, and basic Java on the backend, I enjoy creating web solutions that are both functional and user-friendly. Passionate about turning ideas into real-world applications, I thrive on solving problems, learning new technologies, and delivering end-to-end experiences that provide real value.</p>
+            <p className='intro'>I’m a Computer Engineering student with strong foundations in web development, programming, and database management. Skilled in HTML, CSS, JavaScript, React, Python, SQL, PHP, and Kotlin, I enjoy building responsive and user-friendly applications. I have developed projects such as an Online Banking System and a full-stack e-commerce platform with local shop integration. Passionate about software development, problem-solving, and continuous learning, I aim to create scalable solutions that deliver real-world value.</p>
+            <a href={resume} className='resume-btn' target="_blank" rel="noopener noreferrer">Download Resume</a>
           </div>
         </div>
         <div className="social">

@@ -19,7 +19,7 @@ function App() {
         </video>
         <Nav />
         <section id="home">
-          <Home name="Shubham Giri" role="Web Developer" />
+          <Home name="Shubham Giri" role="Software Engineer" />
         </section>
 
         <section id="about">

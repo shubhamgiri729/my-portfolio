@@ -101,6 +101,30 @@
   animation-delay: 0.7s;
 }
 
+.skill:nth-child(8).show {
+  animation-delay: 0.8s;
+}
+
+.skill:nth-child(9).show {
+  animation-delay: 0.9s;
+}
+
+.skill:nth-child(10).show {
+  animation-delay: 1.0s;
+}
+
+.skill:nth-child(11).show {
+  animation-delay: 1.1s;
+}
+
+.skill:nth-child(12).show {
+  animation-delay: 1.2s;
+}
+
+.skill:nth-child(13).show {
+  animation-delay: 1.3s;
+}
+
 .skill:hover {
 
   transform: translateY(-15px) scale(1.05);

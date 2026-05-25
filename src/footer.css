@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#footer{
+    height: 15vh;
+    width: auto;
+    border-top: 1px solid white;
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 60vh;
+    gap: 30vh;
+}
+
+#footer p{
+    color: white;
+    opacity: 0.8;
+    margin-top: 2vh;
+    font-size: larger;
+}
