@@ -116,12 +116,17 @@
 
 @media screen and (max-width: 768px) {
 
+  #About{
+    width: 70vh;
+    margin-left: 8vh;
+  }
+
   .about-heading {
     font-size: 2.5rem;
   }
 
   .about-card {
-    width: 100%;
+    width: 100vh;
   }
 
 }

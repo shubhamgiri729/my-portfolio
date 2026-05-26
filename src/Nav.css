@@ -244,37 +244,82 @@
 
     .navContainer {
 
+        width: 100%;
+
         height: auto;
 
-        flex-direction: column;
+        padding: 12px 10px;
 
-        gap: 1.5vh;
+        display: flex;
 
-        padding:
-            2vh 2vh;
+        justify-content: center;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+        backdrop-filter: blur(12px);
+
+        background: rgba(0,0,0,0.35);
+
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+
+        z-index: 1000;
     }
 
     #port {
 
-        font-size: 3vh;
+        width: 100%;
 
         text-align: center;
+
+        margin-left: 0;
+
+        margin-bottom: 10px;
+
+        font-size: 22px;
+
+        color: white;
     }
 
-    .nav-links {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 1.5vh;
+    #port:hover{
+        color: black;
     }
 
     .nav-link {
 
-        font-size: 1.8vh;
+        margin: 0 !important;
 
-        padding:
-            8px 12px;
+        padding: 8px 14px;
+
+        font-size: 15px;
+
+        border-radius: 25px;
+
+        background: rgba(255,255,255,0.05);
+
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+
+        background: #38bdf8;
+
+        color: black;
+
+        transform: translateY(-3px);
+
+        font-size: 15px;
+    }
+
+    .nav-link.active {
+
+        background: #38bdf8;
+
+        color: black;
+
+        opacity: 1;
     }
 }

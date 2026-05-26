@@ -248,6 +248,12 @@
 
     #Project {
         padding: 60px 15px;
+        margin-left: 15vh;
+    }
+
+    #project-heading{
+        margin-left: 20vh;
+        font-size: 6vh;
     }
 
     .project {

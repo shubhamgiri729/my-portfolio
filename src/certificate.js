@@ -47,41 +47,41 @@ const certificatesData = [
         title: "Agentic AI Seminar",
         org: "TEC CSI Commite",
         type: "Seminar Participation",
-        time: "Jan 2026",
+        time: "Feb 2026",
         link: AgenticAISeminarCert
     },
     {
         title: "Responsive Web Design Certification",
-        org: "Freecodecamp",
+        org: "FreeCodeCamp",
         type: "Completion",
-        time: "Fab 2026",
+        time: "March 2026",
         link: ResponsiveWebCert
     },
     {
         title: "Hackwin seminar participation",
-        org: "TEC CSI Commite",
+        org: "TEC ISTE Commite",
         type: "Seminar Participation",
-        time: "Fab 2026",
+        time: "Feb 2026",
         link: HackwinCert
     },
     {
         title: "Unix For AI Minds",
         org: "AIBL",
         type: "Participation",
-        time: "Fab 2026",
+        time: "Feb 2026",
         link: UnixAICert
     },
     {
         title: "Building Autonomous AI Agent Seminar",
-        org: "TEC CSI Commite",
+        org: "TEC Alumni Commite",
         type: "Seminar Participation",
-        time: "Fab 2026",
+        time: "March 2026",
         link: AutonomousAICert
     },
     {
         title: "SQL Advanced Certificate",
-        org: "Hackerrank",
-        type: "Completion",
+        org: "HackerRank",
+        type: "Accomplishment",
         time: "March 2026",
         link: SqlAdvancedCert
     },
@@ -102,14 +102,13 @@ const certificatesData = [
     {
         title: "Agentic AI Starter Course with Certification",
         org: "Saumya Singh",
-        type: "Completion",
+        type: "Appreciation",
         time: "April 2026",
         link: AgenticAIStarterCert
     }
 ];
 
 export default function Certificate() {
-    // Helper function to handle opening files/links in a new tab safely
     const openCertificate = (url) => {
         if (url) {
             window.open(url, "_blank", "noopener,noreferrer");

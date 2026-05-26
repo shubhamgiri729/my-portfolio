@@ -175,26 +175,53 @@
     transform: translateY(0px);
   }
 }
-
 @media screen and (max-width: 768px) {
 
-  .skills-heading {
-    font-size: 2.5rem;
+  #skills {
+    padding: 70px 5%;
+    min-height: auto;
   }
+
+  .skills-container {
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-heading {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+  }
+
+  .skill-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
 
   .skill {
-
-    width: 170px;
-    height: 170px;
-  }
+  width: 155px;
+  height: 165px;
+  margin: 0;
+}
 
   .web {
-
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
   }
 
   .skill p {
     font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #f8fafc;
   }
 }
