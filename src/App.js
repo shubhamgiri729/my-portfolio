@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Nav from './Nav';
 import Project from './Project';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
