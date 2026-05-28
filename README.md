@@ -1,78 +1,177 @@
 # Personal Portfolio Website
 
-A responsive personal portfolio website built to showcase my projects, technical skills, and development journey as a **Web Developer**. This project focuses on clean UI, structured content, and practical functionality.
+A modern and responsive personal portfolio website developed to showcase my projects, technical skills, certifications, and development journey as a **Web Developer and Computer Engineering Student**.
+
+The portfolio is designed with a clean UI, smooth animations, responsive layouts, and interactive sections to provide a professional user experience across devices.
 
 ---
 
 ## 📌 Project Status
 
-🚧 **In Progress (Approximately 75% Complete)**
+✅ **Actively Developed & Continuously Improved**
 
-This portfolio is actively being improved with additional features, enhanced responsiveness, and updated project content.
-
----
-
-## ✨ Features Implemented
-
-* Clean and modern user interface
-* Section-based layout for better content organization
-* Projects showcase section
-* Skills and technologies overview
-* Basic contact/message form UI
-* Deployed as a web application
+The portfolio now includes multiple completed sections including projects, certifications, skills, resume download, and contact functionality, with further improvements planned.
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
 
-* **React**
-* **JavaScript**
-* **HTML5**
-* **CSS3**
+## 🔹 Home Section
+
+* Animated hero section
+* Professional introduction
+* Resume download button
+* Social media integration
+* Responsive design with modern UI effects
+
+## 🔹 About Section
+
+* Personal introduction
+* Educational qualifications
+* Hobbies and interests
+* Animated section transitions
+
+## 🔹 Skills Section
+
+* Interactive skill cards
+* Responsive grid layout
+* Hover animations and entry effects
+* Technologies categorized visually
+
+## 🔹 Projects Section
+
+Projects showcased with modern glassmorphism UI design:
+
+* Smart Medication Assistant System
+* LocalKart E-Commerce Website
+* Online Banking System
+* Calculator App
+* Tic-Tac-Toe Game
+* Amazon Clone
+
+### Features:
+
+* GitHub repository buttons
+* Hover animations
+* Responsive project cards
+* Smooth section transitions
+
+## 🔹 Certifications Section
+
+Dedicated certification showcase including:
+
+* Google Cloud Arcade
+* Deloitte Data Analytics Job Simulation
+* Frontend Development Certifications
+* Kotlin Android Development
+* SQL Certification
+* Responsive Web Design Certification
+* AI & Webinar Participation Certificates
+
+### Features:
+
+* Responsive certificate cards
+* Animated hover effects
+* Organized certificate information
+
+## 🔹 Contact Section
+
+* Functional contact form using **EmailJS**
+* Success message animations
+* Modern glassmorphism form UI
+* Mobile responsive layout
+
+## 🔹 Footer Section
+
+* Dynamic last updated date
+* Professional footer styling
+* Responsive footer layout
 
 ---
 
-## 🚧 Planned Improvements
+# 🛠 Tech Stack
 
-The following enhancements are planned to improve usability, functionality, and overall presentation:
+## Frontend
 
-### 🔹 UI & Layout Enhancements
+* React.js
+* JavaScript
+* HTML5
+* CSS3
 
-* Implement a **sticky navigation header** for improved user experience
-* Add clear **titles and headings** to each section
-* Improve **responsive design** for mobile, tablet, and desktop devices
+## Libraries & Services
 
-### 🔹 Functionality Enhancements
+* EmailJS
+* React Hooks
 
-* Fully integrate and validate the **contact/message form functionality**
-* Improve user interaction and form handling logic
+## Tools Used
 
-### 🔹 Content Updates
-
-* Add **newly learned technical skills**
-* Include **additional projects** as they are completed
-* Optionally embed **project demo videos** to better showcase functionality
+* VS Code
+* Git & GitHub
 
 ---
 
-## 🎯 Project Objective
+# 🎨 UI/UX Features
 
-The goal of this project is to create a professional portfolio website that effectively represents my skills, projects, and learning journey as a Web Developer, while following modern web development practices.
-
----
-
-## 🚀 Future Scope
-
-* Performance optimization
-* Improved accessibility
-* SEO enhancements
-* Integration with backend services if required
+* Fully responsive design
+* Smooth animations and transitions
+* Glassmorphism UI styling
+* Floating social media icons
+* Animated skill and certificate cards
+* Mobile optimized navigation
+* Interactive hover effects
 
 ---
 
-## 📬 Contact
+# 📱 Responsive Design
 
-If you’d like to connect or provide feedback, feel free to reach out via the contact section of the portfolio.
+The website is optimized for:
 
+* Mobile Devices
+* Tablets
+* Desktop Screens
 
-⭐ *This project is continuously evolving as I enhance my skills and build new projects.*
+Special attention has been given to:
+
+* Mobile navigation
+* Responsive card layouts
+* Readable typography
+* Proper spacing and alignment
+
+---
+
+# 🎯 Project Objective
+
+The objective of this project is to build a professional portfolio platform that effectively represents my:
+
+* Technical Skills
+* Projects
+* Certifications
+* Development Journey
+* Web Development Capabilities
+
+while following modern frontend development practices and responsive design principles.
+
+---
+
+# 🚀 Future Improvements
+
+Planned future enhancements include:
+
+* Dark/light theme switcher
+* Project filtering system
+* Backend integration
+* Blog section
+* Advanced animations
+* SEO optimization
+* Performance improvements
+* Accessibility enhancements
+
+---
+
+# 📬 Contact
+
+Feel free to connect with me through the contact section available in the portfolio website.
+
+---
+
+⭐ *This portfolio is continuously evolving as I improve my development skills and build new projects.*
