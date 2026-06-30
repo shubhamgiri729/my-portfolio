@@ -13,6 +13,7 @@ import SqlAdvancedCert from "./certificates/sql advanced certificate hackerrank.
 import BuildItOnCert from "./certificates/Build-it ON participation certificate.pdf";
 import AIRoboticsCert from "./certificates/AI and Robotics Webinar Macky's Tech.jpeg";
 import AgenticAIStarterCert from "./certificates/Agentic AI Starter Course with Certification.jpeg";
+import PythonCertificate from "./certificates/Python Certification.png";
 
 const certificatesData = [
     {
@@ -105,6 +106,13 @@ const certificatesData = [
         type: "Appreciation",
         time: "April 2026",
         link: AgenticAIStarterCert
+    },
+    {
+        title: "Python Certification",
+        org: "FreeCodeCamp",
+        type: "Completion",
+        time: "June 2026",
+        link: PythonCertificate
     }
 ];
 

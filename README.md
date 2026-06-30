@@ -67,6 +67,7 @@ Dedicated certification showcase including:
 * SQL Certification
 * Responsive Web Design Certification
 * AI & Webinar Participation Certificates
+* Python Certification
 
 ### Features:
 
